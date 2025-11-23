@@ -2,13 +2,22 @@ package SP_Lab;
 
 public class Paragraph implements Element {
     private String text;
+    private alignStrategy AlignStrategy;
 
     public Paragraph(String text) {
         this.text = text;
     }
 
     public void print() {
-        System.out.println("Paragraph: " + text);
+        if (AlignStrategy != null) {
+            AlignStrategy.render(text);
+        } else {
+            System.out.println(text);
+        }
+    }
+
+    public void setAlignStrategy(alignStrategy strategy) {
+        this.AlignStrategy = strategy;
     }
 
     public void add(Element e) {}
