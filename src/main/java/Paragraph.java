@@ -1,4 +1,4 @@
-package SP_Lab;
+
 
 public class Paragraph implements Element {
     private String text;

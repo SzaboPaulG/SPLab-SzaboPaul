@@ -1,4 +1,4 @@
-package SP_Lab;
+
 
 public class Image implements Element {
     private String imageName;

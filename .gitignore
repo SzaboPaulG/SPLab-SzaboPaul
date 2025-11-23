@@ -32,3 +32,5 @@ bin/
 /out/
 /.idea/
 /*.iml
+.gradle/
+build/

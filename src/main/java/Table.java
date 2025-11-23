@@ -1,4 +1,4 @@
-package SP_Lab;
+
 
 public class Table implements Element {
     private String title;

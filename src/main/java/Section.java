@@ -1,4 +1,3 @@
-package SP_Lab;
 
 import java.util.ArrayList;
 import java.util.List;

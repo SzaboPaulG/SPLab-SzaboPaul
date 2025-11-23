@@ -1,4 +1,4 @@
-package SP_Lab;
+
 
 public interface Element {
     void print();
