@@ -1,0 +1,5 @@
+Proiectul are ca scop gestionarea unui magazin: produse, stoc, preturi, angajati etc. Ca functionalitati, se vor putea sterge, adauga, modifica
+elementele bazei de date. Posibil sa existe o implementare a unui sistem de tip user/admin, in asa fel incat clientii sa poata viziona ce
+este disponibil in stoc si preturile actuale, iar administratorul sa isi poata gestiona magazinul.
+
+
