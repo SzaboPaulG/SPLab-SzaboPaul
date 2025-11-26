@@ -12,9 +12,11 @@ import java.util.List;
 @RequestMapping("/books")
 public class BooksController {
     private final BooksService booksService;
+    private final ro.uvt.observer.BooksSubject subject;
 
-    public BooksController(BooksService booksService) {
+    public BooksController(ro.uvt.observer.BooksSubject subject, BooksService booksService) {
         this.booksService = booksService;
+        this.subject = subject;
     }
 
     @GetMapping
@@ -37,6 +39,7 @@ public class BooksController {
     public ResponseEntity<Book> createBook(@RequestBody Book book) {
         Command<Book> command = new CreateBookCommand(booksService, book);
         Book created = command.execute();
+        subject.add(created);
         return ResponseEntity.ok(created);
     }
 

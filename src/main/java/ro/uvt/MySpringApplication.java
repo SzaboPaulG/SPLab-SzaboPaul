@@ -8,6 +8,9 @@ import ro.uvt.difexamples.SingletonComponent;
 import ro.uvt.difexamples.TransientComponent;
 
 @SpringBootApplication
+    @Bean
+    public ro.uvt.observer.BooksSubject booksSubject() { return new ro.uvt.observer.BooksSubject(); }
+
 public class MySpringApplication {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(MySpringApplication.class, args);
